@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Imagerecognizer by DPRL</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Imagerecognizer</h1>
+        <p>Math symbol image recognizer used by Min image recognition server</p>
+
+        <p class="view"><a href="https://github.com/DPRL/ImageRecognizer">View the Project on GitHub <small>DPRL/ImageRecognizer</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/DPRL/ImageRecognizer/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/DPRL/ImageRecognizer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/DPRL/ImageRecognizer">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <hr><p>DPRL ImageRecognition</p>
+
+<p>Copyright (c) 2012-2013, Siyu Zhu, Lei Hu, Richard Zanibbi</p>
+
+<h2>
+<a name="--contact-information-is-provided-at-the-bottom-of-the-file" class="anchor" href="#--contact-information-is-provided-at-the-bottom-of-the-file"><span class="octicon octicon-link"></span></a>  *Contact information is provided at the bottom of the file.</h2>
+
+<p>:: License :: </p>
+
+<pre><code>These tools are provided in the framework of ‘Min’ math equation recognition 
+interface 'as is' without any guarantee of suitability for non-research
+use.  No commercial use is permitted. The tools are being distributed under
+a Creative Commons license (please see the LICENSE file, and the directory
+cc_license contains a file detailing the specifics of the license).
+</code></pre>
+
+<p>:: Requirements ::</p>
+
+<pre><code>MATLAB (7.0.11.584) are required to run
+the tools included.  Scripts are written in MATLAB.
+</code></pre>
+
+<hr><h2>
+<a name="--installation--" class="anchor" href="#--installation--"><span class="octicon octicon-link"></span></a>  INSTALLATION  </h2>
+
+<p>No installation is needed, just copy and paste the code to the directory where you want to use the function.</p>
+
+<hr><h2>
+<a name="--training-samples-mat-files" class="anchor" href="#--training-samples-mat-files"><span class="octicon octicon-link"></span></a>  Training Samples (MAT files)</h2>
+
+<p>Training samples are stored in .mat files and could be loaded by Initializaiton.m
+They include GridVecAs.mat and symbolCodeAs.mat which contains training samples and
+corresponding symbol labels respectively.</p>
+
+<hr><h2>
+<a name="--scripts-" class="anchor" href="#--scripts-"><span class="octicon octicon-link"></span></a>  Scripts </h2>
+
+<p>Scripts in src/ are used to accomplish the feature extraction, image recognition 
+and label conversion. All programs are written in MATLAB (7.0.11.584 compatible). </p>
+
+<p>Initialization
+    initilizing the system by loading training data feature vectors and
+    class labels; Open MATLAB Pool for parallel computing</p>
+
+<p>ContourExt
+    Extract contours from images 'cc1.tiff', 'cc2.tiff', etc. The
+    bounding-box information is provided in 'inputFileName'{'bb.csv'} and contour
+    coordinates are stored in file 'outputFileName'{'contour.csv'}.</p>
+
+<p>Code2Class
+    this function is used to convert the hexadecimal infty code to its
+    corresponding symbol class InputSymbolCode is not a number but a string</p>
+
+<p>Recognizer
+    Generate isolated symbol image from input image and bounding box 
+    information (output of Segmenter). Recognize symbol class using Nearest 
+    Neighbor method. Output is ICDAR symbol code. </p>
+
+<hr><h2>
+<a name="--contact" class="anchor" href="#--contact"><span class="octicon octicon-link"></span></a>  Contact</h2>
+
+<p>Siyu Zhu
+<a href="mailto:sxz8564@rit.edu">sxz8564@rit.edu</a>
+Rochester Institute of Technology, USA</p>
+
+<p>Lei Hu
+<a href="mailto:lei.hu@rit.edu">lei.hu@rit.edu</a>
+Rochester Institute of Technology, USA</p>
+
+<p>Richard Zanibbi
+<a href="mailto:rlaz@cs.rit.edu">rlaz@cs.rit.edu</a>
+Rochester Institute of Technology, USA</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/DPRL">DPRL</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
