@@ -1,0 +1,9 @@
+License and Copyright
+
+The DPRL ImageRecognition toolkit is Copyright (c) 01/06/2013, Siyu Zhu, Lei Hu and Richard Zanibbi. ImageRecognition is free software; you may redistribute it and/or modify it under the terms of the Creative Commons CC BY-NC-SA 3.0 (Attribution-NonCommercial-ShareAlike 3.0 Unported)
+
+These programs are distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the Creative Commons License CC BY-NC-SA 3.0 for more details.  You should have received a copy of the Creative Commons License along with this program; if not, you can also find the Creative Commons license on the Creative Commons web site.
+
+In addition, we ask that you acknowledge ImageRecognition and its authors in any program or publications in which DPRL ImageRecognition is used. (You are not required to do so; it is your choice to decide whether you wish to comply with this request or not.) For general publications, we ask that you reference:
+
+Siyu Zhu, Lei Hu, Richard Zanibbi: “Rotation-robust math symbol recognition and retrieval using outer contours and image subsampling.” In IS&T, Document Recognition and Retrieval XX, 2013, pp. 865805-865805-12.

@@ -1,0 +1,15 @@
+DPRL Math Symbol Recognizers
+Copyright (c) 2014 Siyu Zhu, Lei Hu, Richard Zanibbi
+
+This collection of classifiers for isolated math symbol images was
+created by Siyu Zhu on-and-off over a year-and-a-half. The code was 
+written as a part of the Min system which is an interface of math 
+equation recognition. 
+
+The system was developed at the Rochester Institute of Technology in
+Rochester, New York, USA, primarily in the Document and Pattern Recognition
+Lab (DPRL) located within the Computer Science Department.
+
+Please see the LICENSE.txt file for terms of use (the system is being
+distributed under the GNU General Public License version 3).
+

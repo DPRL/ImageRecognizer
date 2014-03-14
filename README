@@ -1,0 +1,74 @@
+--------------------------------------------------------------------------
+  DPRL ImageRecognition
+
+  Copyright (c) 2012-2013, Siyu Zhu, Lei Hu, Richard Zanibbi
+  *Contact information is provided at the bottom of the file.
+--------------------------------------------------------------------------
+
+:: License :: 
+
+	These tools are provided in the framework of ‘Min’ math equation recognition 
+	interface 'as is' without any guarantee of suitability for non-research
+	use.  No commercial use is permitted. The tools are being distributed under
+	a Creative Commons license (please see the LICENSE file, and the directory
+	cc_license contains a file detailing the specifics of the license).
+
+:: Requirements ::
+
+	MATLAB (7.0.11.584) are required to run
+	the tools included.  Scripts are written in MATLAB.
+
+----------------------------------
+  INSTALLATION  
+----------------------------------
+
+No installation is needed, just copy and paste the code to the directory where you want to use the function.
+
+----------------------------
+  Training Samples (MAT files)
+----------------------------
+
+Training samples are stored in .mat files and could be loaded by Initializaiton.m
+They include GridVecAs.mat and symbolCodeAs.mat which contains training samples and
+corresponding symbol labels respectively.
+
+----------------------------
+  Scripts 
+----------------------------
+
+Scripts in src/ are used to accomplish the feature extraction, image recognition 
+and label conversion. All programs are written in MATLAB (7.0.11.584 compatible). 
+
+Initialization
+	initilizing the system by loading training data feature vectors and
+	class labels; Open MATLAB Pool for parallel computing
+
+ContourExt
+	Extract contours from images 'cc1.tiff', 'cc2.tiff', etc. The
+	bounding-box information is provided in 'inputFileName'{'bb.csv'} and contour
+	coordinates are stored in file 'outputFileName'{'contour.csv'}.
+
+Code2Class
+	this function is used to convert the hexadecimal infty code to its
+	corresponding symbol class InputSymbolCode is not a number but a string
+
+Recognizer
+	Generate isolated symbol image from input image and bounding box 
+	information (output of Segmenter). Recognize symbol class using Nearest 
+	Neighbor method. Output is ICDAR symbol code. 
+
+--------------------------------
+  Contact
+--------------------------------
+
+Siyu Zhu
+sxz8564@rit.edu
+Rochester Institute of Technology, USA
+
+Lei Hu
+lei.hu@rit.edu
+Rochester Institute of Technology, USA
+
+Richard Zanibbi
+rlaz@cs.rit.edu
+Rochester Institute of Technology, USA
